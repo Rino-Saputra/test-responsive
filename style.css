@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0 
+}
+
+body {
+    background: linear-gradient(to bottom right,rgba(231, 114, 4,0.2),rgba(255,255,255,0));
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+button,input {
+    box-shadow: 0px 10px 10px  rgba(0,0,0,.2);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .nav .burger {
+    display: none;
+}
+
+.container .nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.container .nav .logo {
+    font-family: 'Rubik Beastly', cursive;
+    font-size: 40px;
+    color: rgb(139, 76, 17);;
+}
+
+.container .nav .list{
+    width: 40%;
+}
+
+.container .nav .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.container .nav .list ul li{
+    list-style: none;
+}
+
+.container .nav .list ul li a {
+    text-decoration: none;
+    color: rgba(117, 29, 8, 0.945);
+}
+
+.container .nav .btn {
+    display: flex;
+    width: 15%;
+}
+
+.container .nav .btn button {
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+
+
+/* content */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.content .main-content .head-text,.context,.search,.list-logo {
+    padding-bottom: 20px;
+}
+
+.content .main-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
+.content .main-content .head-text {
+    font-size: 29px;
+    line-height: 150%;
+    font-family: sans-serif;
+}
+
+.content .main-content .context {
+    color: rgba(0, 0, 0, 0.418);
+    width: 70%;
+}
+
+.content .main-content .head-text span {
+    color: rgb(231, 114, 4);
+    display: block;
+}
+
+.content .main-content .search {
+    margin: 10px 0;
+}
+
+.content .main-content .search button {
+    position: absolute;
+    margin-left: -110px;
+    margin-top: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(231, 114, 4);
+    color: white;
+    
+    
+}
+.content .main-content .search input {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: white;
+    float: left;
+    padding-left: 20px;
+    outline: none;
+}
+
+.content .main-content .list-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content .main-content .list-logo div {
+    width: 50%;
+}
+
+.content .main-content .list-logo button {
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    border-style: none;
+    margin: 10px auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.content .image {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+
+
+/* footer */
+.footer {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .slogan h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 45px;
+    margin-bottom: -5px;
+    transition: 0.8s;
+}
+
+.footer .slogan div {
+    height: 2px;
+    width: 10%;
+    background-color: rgb(231, 114, 4);
+    margin: 0 auto;
+}
+
+.footer .slogan h5 {
+    text-align: center;
+    margin: 26px 0 26px 0;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.footer .branding {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .branding button {
+    height: 150px;
+    width: 40%;
+    border-radius: 20px;
+    border-style: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.footer .branding button h5 {
+    color: rgba(0, 0, 0, 0.418);;
+}
+
+
+
+/* event */
+button:hover {
+    background-color: white;
+}
+.container .nav .list ul li a:hover {
+    color: rgb(160, 9, 9);
+    font-weight: bold;
+}
+
+.content .main-content .search button:hover {
+    background-color: rgb(243, 47, 47);
+}
+
+.footer .slogan h1:hover {
+    font-size: 50px;
+}
+
+content .main-content .head-text span:hover {
+    color: violet;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 600px) {
+    /* nav */
+    .container .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container .nav .list{
+        display: none;
+    }
+
+    .container .btn button {
+        display: none;
+    }
+
+    .container .nav {
+        justify-content: space-between;
+    }
+
+    .container .nav .burger {
+        height: 25px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .container .nav .burger span {
+        height: 5px;
+        width: 40px;
+        background-color: red;
+    }
+
+    /* conten */
+    .container .content {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container .content .image img {
+        width: 400px;
+        height: 500px;
+        margin-left: -60px;
+    }
+    .container .content .image {
+        order: 1;
+        width: 100%;
+    }
+    .container .content .main-content {
+        order: 2;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .container .main-content .head-text {
+        font-size: 22px;
+        line-height: 180%;
+    }
+
+    .container .main-content .context {
+        width: 86%;
+    }
+
+    .content .main-content .search input {
+        width: 80%;
+        font-size: 12px;
+    }
+
+
+    /* footer */
+    .footer .branding button {
+        font-size: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .footer .slogan h1 {
+        font-size: 25px;
+    }
+
+    .footer .slogan div {
+        width: 50%;;
+    }
+
+    .footer .slogan h1:hover {
+        font-size: 28px;
+    }
+}
