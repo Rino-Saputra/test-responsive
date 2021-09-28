@@ -235,6 +235,9 @@ content .main-content .head-text span:hover {
 
 /* responsive */
 @media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
     /* nav */
     .container .nav {
         flex-direction: row;
