@@ -275,13 +275,17 @@ content .main-content .head-text span:hover {
     }
 
     .container .content .image img {
-        width: 400px;
-        height: 500px;
-        margin-left: -60px;
+        display: none;
     }
     .container .content .image {
         order: 1;
-        width: 100%;
+        background-image: url('2.png');
+        /* border: 2px solid black; */
+        height: 500px;
+        width: 80%;
+        background-size: cover;
+        background-position: -60px 0;
+        margin-left: -60px;
     }
     .container .content .main-content {
         order: 2;
